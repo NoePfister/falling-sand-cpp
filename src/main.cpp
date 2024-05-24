@@ -1,10 +1,12 @@
 #include <iostream>
-#include "game.h"
-#include "raylib.h"
+#include "../bin/raylib.h"
+#include "game.hpp"
 
 int main() {
  
+    std::cout << "Initializing Game" << std::endl;
     Game *game = new Game();
+
 
     game->setup();
     game->loop();

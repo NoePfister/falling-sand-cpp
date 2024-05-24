@@ -1,4 +1,4 @@
-#include "raylib.h"
+#include "../bin/raylib.h"
 
 #ifndef game_h
 #define game_h

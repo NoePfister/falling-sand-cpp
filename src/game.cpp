@@ -1,4 +1,4 @@
-#include "game.h"
+#include "game.hpp"
 
 
 void Game::setup(){
@@ -10,7 +10,7 @@ void Game::loop(){
         // Zeichnen
         BeginDrawing();
         ClearBackground(RAYWHITE);
-        DrawText("Hello, Raylib!", 190, 200, 20, LIGHTGRAY);
+        DrawText("Hello,  Raylib!", 190, 200, 20, LIGHTGRAY);
         EndDrawing();
     }
 }
