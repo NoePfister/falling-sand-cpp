@@ -23,6 +23,7 @@ public:
     void setup();
     void loop();
     void end();
+    void update();
 
     int cell_height = _screen_height/_cell_count_x;
     int cell_width = _screen_width/_cell_count_x;

@@ -18,6 +18,8 @@ void Game::setup(){
 
 void Game::loop(){
         while (!WindowShouldClose()) {
+
+        this->update();
         // Zeichnen
         BeginDrawing();
         ClearBackground(BLACK);
@@ -25,6 +27,15 @@ void Game::loop(){
         this->_draw_cells();
         
         EndDrawing();
+    }
+}
+
+void Game::update(){
+    for (int x = 0; x < Game::_cell_count_x; x++) {
+        for (int y = 0; y < Game::_cell_count_y; y++) {
+            this->cells[x][y]->update_cell();
+            
+        }
     }
 }
 
